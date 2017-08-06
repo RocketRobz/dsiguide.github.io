@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>HiyaCFW (DSiWare) - DSi Guide</title>
+
+
+
+
+<meta name="description" content="DSi Homebrew Guide">
+
+
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="DSi Guide">
+<meta property="og:title" content="HiyaCFW (DSiWare)">
+
+
+  <link rel="canonical" href="https://dsiguide.me/hiyacfw-dsiware.html">
+  <meta property="og:url" content="https://dsiguide.me/hiyacfw-dsiware.html">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Plailect",
+      "url" : "https://dsiguide.me",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://dsiguide.me/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<script type="text/javascript">
+    var host = "dsiguide.me";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <ul class="visible-links">
+          
+          
+          
+          
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">Guide</a></li>
+          <li class="masthead__menu-item"><a href="/faq">FAQ</a></li>
+          <li class="masthead__menu-item"><a href="/donations">Donations</a></li>
+          <li class="masthead__menu-item"><a href="/credits">Credits</a></li>
+          <li class="masthead__menu-item"><a href="/troubleshooting">Troubleshooting</a></li>
+          <li class="masthead__menu-item"><a href="/uninstall-cfw">Uninstall CFW</a></li>
+          <li class="masthead__menu-item"><a href="/site-navigation">Site Navigation</a></li>
+        </ul>
+        <ul class="hidden-links links-menu hidden"></ul>
+        
+        <button class="nav-selector" id="toggle-nav"><div class="navicon"></div></button>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+
+<!--script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6670011780914577",
+    enable_page_level_ads: true
+  });
+</script-->
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="HiyaCFW (DSiWare)">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">HiyaCFW (DSiWare)
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+
+        <hr>
+        
+        
+        
+
+        
+          
+        <div class ="notice"><b>If you need help, ask the <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord!</a>.</b></div>
+        
+          
+        <div class ="notice"><b>I worked hard on this guide! If you want, you can <a href="donations">donate</a> through <a href="https://www.paypal.me/lukehasawii/10">PayPal</a> or <a href="bitcoin:126mXsRyQ8qmuqYQ86X3fhTvXL5B3SH877">Bitcoin</a>!</b></div>
+        
+
+        <hr>
+
+        <!--center>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Guide -->
+        <!--ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6670011780914577"
+            data-ad-slot="2889110246"
+            data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        </center-->
+
+        <hr>
+
+        <p class="notice--primary">This page is for instructions on how to install HiyaCFW using a DSi on version 11.4.
+		
+<p class="notice--info">The pictures in this guide can be enlarged to see clearer by clicking on them.
+
+<p class="notice--warning">You MUST have at least one exploitable DSiWare from the chart below in order to continue!
+
+
+<h5 id="step-1">Step One - Installing a DSiWare exploit</h5>
+
+<p class="notice--primary">Select the appropriate link for your DSiWare and reigon from the chart below.
+
+<table>
+  <!colgroup>
+    <col span="1" style="width: 25%;" />
+    <col span="1" style="width: 25%;" />
+    <col span="1" style="width: 25%;" />
+	<col span="1" style="width: 25%;" />
+  </colgroup>
+  <thead>
+    <tr>
+<th style="text-align: center">DSiWare Title</th>
+<th style="text-align: center">1.4U</th>
+<th style="text-align: center">1.4E</th>
+<th style="text-align: center">1.4J</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center; font-weight: bold;">Flipnote Studio</td>
+<td style="text-align: center; font-weight: bold;"><a href="/hiyacfw-flipnotehax-usa">Flipnotehax (USA)</a></td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">Flipnotehax (EUR)</a></td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">Flipnotehax (JPN)</a></td>
+</tr><tr>
+<td style="text-align: center; font-weight: bold;">DSi Browser</td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">DSiBrowserhax (USA)</a></td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">DSiBrowserhax (EUR)</a></td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">DSiBrowserhax (JPN)</a></td>
+</tr>
+<tr>
+<td style="text-align: center; font-weight: bold;">The Legend of Zelda: Four Swords</td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">4Swordshax (USA)</a></td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">4Swordshax (EUR)</a></td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">4Swordshax (JPN)</a></td>
+</tr><tr>
+<td style="text-align: center; font-weight: bold;">Sudoku (EA)</td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">Sudokuhax (USA)</a></td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">Sudokuhax (EUR)</a></td>
+<td style="text-align: center; font-weight: bold;"><a href="/placeholder">Sudokuhax (JPN)</a></td>
+</tr>
+  </tbody>
+</table>
+
+        
+        
+        <hr>
+
+        <center>
+        <!--ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-6670011780914577"
+            data-ad-slot="7670623049"
+            data-ad-format="horizontal"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script-->
+
+        </center>
+
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+
+        
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+
+  </article>
+
+  
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- end custom footer snippets -->
+
+        
+
+
+
+<div class="page__footer-copyright">&copy; 2017 LukeHasAWii, Site Design Plailect - <a href="https://github.com/dsiguide/dsiguide.github.io">Source</a> - <a href="site-navigation">Site Navigation</a>
+
+      </footer>
+    </div>
+
+    <script src="https://dsiguide.me/assets/js/main.min.js"></script>
+
+
+
+
+ 
+
+
+
+
+
+
+  </body>
+</html>
