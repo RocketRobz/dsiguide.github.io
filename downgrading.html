@@ -341,14 +341,29 @@ As of August 16th, 2017, we no longer condone nor will help you with Flipnotehax
   <li>Go to your OSFMount window, and press "Dismount". Exit OSFMount.
   <li>In the folder named twltool-v1.6, right click in an empty space and select "Open command window here", then paste in Code 2 (from our new Codes.txt) and press Enter</li>
   <li>When it is done, you should see a file named "NAND_ENC.bin" in the "twltool-v1.6" folder</li>
+	<hr>
+  
+    <h5 id="section-iii---testing">Section III - Testing Your Downgraded NAND with NO$GBA</h5>
+		<hr>
+  <li>Download and extract NO$GBA to a directory.</li>
   <li>Copy the .bin file to your NO$GBA directory (make sure you have extracted the NO$GBA archive) and rename it to DSI-1.mmc</li>
   <li>Extract the DSi BIOS files from the "DSi firmware files.zip" archive into the NO$GBA directory</li>
-  <li>Run NO$GBA and make sure that the NAND works perfectly</li>
+  <li>Download the DSi footer template file to the NO$GBA directory. </li>
+  <li>Open it in HxD. </li>
+  <li>Replace the 16 bytes filed with AAs with your CID </li>
+  <li>Replace the 8 bytes filed with BBs with your Console ID, but reversed. This means that if your Console ID starts with the byte 26 and ends with 08, for example, it should now end with 26 and start with 08. </li>
+  <li>After you have inserted your CID and Console ID, highlight and copy the entire footer file.  </li>
+  <li>Open DSi-1.mmc and scroll to the end of the file. At the end of the file, paste in the footer. </li>
+  <li>Save and close DSi-1.mmc and open No$GBA.</li>
+  <li>Go to options and then Emulation setup.</li>
+  <li>In the Emulation tab, set “Reset/Startup Entrypoint” to “GBA/NDS BIOS (Nintendo logo)” and NDS Mode Colors to “DSi (retail/16MB)”. Then click Save Now and then OK.</li>
+  <li>Go to File, Cartridge Menu (FileName), and then open any .nds file (such as FWTool).</li>
+  <li>Your NAND will now be emulated by NO$GBA. Check that your NAND works perfectly</li>
   <li>If your encrypted NAND works on NO$GBA, then rename the "NAND_ENC.bin" file to nand_dsi.bin (if it asks you to overwrite, you may want to move the other nand_dsi.bin somewhere else and try renaming it again)</li>
   <li>Move the new nand_dsi.bin to the folder in your SD card with random letters (if it asks to overwrite, simply accept)</li>
     <hr>
 
-  <h5 id="section-iii---installing">Section III - Installing Your Downgraded NAND</h5>
+  <h5 id="section-iv---installing">Section IV - Installing Your Downgraded NAND</h5>
     <hr>
 
   <li>Run sudokuhax again, by opening Sudoku and touching the bottom screen/pressing any button</li>
