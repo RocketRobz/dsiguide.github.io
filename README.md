@@ -1,4 +1,4 @@
-# dsiguide.github.io
+# dsiguide.me (formerly dsi.guide)
 <a href="https://www.dsiguide.me">Visit the guide here</a>
 
 This guide is a DSi Homebrew guide that allows you to go from stock firmware to HiyaCFW, a type of custom firmware.
