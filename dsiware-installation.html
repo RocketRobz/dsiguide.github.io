@@ -183,7 +183,7 @@
                     <p class="notice--warning">These instructions ONLY work on USA DSi systems! Make sure that there is a "U" by your version number in system settings.
 
                     </p>
-                    <div class="notice--danger">There is a risk of bricking, as with any modifications done to any system, but the risk is low. As a precaution, make SURE to follow ALL directions EXACTLY. Failure to do this could result in a brick.</div>
+                    <div class="notice--danger">There is a risk of bricking, as with any modifications done to any system, but the risk is low. However, before following these instructions, go on System Settings and check how many "blocks" you have left and ensure your DSiWare takes up less blocks than that (1 block = 128 kilobytes). If you install an app for which you do not have enough blocks, you WILL brick.</div>
 
 
                     <h3 id="what-you-need">Requirements:</h3>
@@ -200,7 +200,9 @@
 
                     <ol>
                         <li>Power on your DSi.</li>
-                        <li>Go to System Settings &gt; Data Management &gt; System Memory &gt; Flipnote Studio (any other DSiware in this area will work as well) &gt; Press Copy &gt; Press Yes, and finally exit to the DSi Menu. <em>(If you cannot access Data Management, try opening the DSi Shop, then close it, and try again!)</em></li>
+						<li>Take note of how many blocks you have free under "System Memory", and make sure that you have more blocks free than your newly installed app will take. Installing an app without enough blocks will result in a brick. </li>
+                        <li>If you do not have enough free blocks, you can free some space by copying over some apps you have installed to your SD card and then deleting them from System Memory. </li>
+						<li>Go to System Settings &gt; Data Management &gt; System Memory &gt; Flipnote Studio (any other DSiware in this area will work as well) &gt; Press Copy &gt; Press Yes, and finally exit to the DSi Menu. <em>(If you cannot access Data Management, try opening the DSi Shop, then close it, and try again!)</em></li>
                         <li>Power off your device, and insert the device's SD card into your computer. </li>
                         <li>Unzip <code class="highlighter-rouge">dsi_srl_extract.zip</code>. Open the drive of your SD card, then navigate to the folder titled <code class="highlighter-rouge">Private</code> &gt; <code class="highlighter-rouge">DS</code> &gt; <code class="highlighter-rouge">Title</code>. Copy your .bin file into the unzipped <code class="highlighter-rouge">dsi_srl_extract</code> folder. If you see more than one .bin file, just copy ONE.</li>
                         <li>Double-click on <code class="highlighter-rouge">console_id.py</code> to run it (you need to have python downloaded if you do not already!). You will now see a console_id.txt file in the same folder. <em>If using Mac or Linux, use <a href="https://www.winehq.org/">'Wine'</a> so that the python will run properly.</em></li>
@@ -210,11 +212,11 @@
                     </ol>
                     <h4 id="section-ii---dsiware-to-sd">Section II - Copying the DSiWare title to SD</h4>
                     <ol>
+						<li> Make sure you have enough blocks available for your new app (See the beginning of Section I). If you do not, you WILL brick! </li>
                         <li>Unzip and open <code class="highlighter-rouge">DSi Backup Template</code> &gt; <class="highlighter-rouge">Game Folder Template</code> &gt; <code class="highlighter-rouge">Content</code> &gt; <code class="highlighter-rouge">tmds</code> and find the tmd file that has the titleid (see below) for the game you want to install. Copy the tmd file back into the <code class="highlighter-rouge">Content</code> folder.</li>
                         
                         	                          <p class="notice--info">To look up the titleid for your game, you can find most <a href="https://3dbrew.org/wiki/3DS_DSiWare_Titles">HERE,</a>but some others are located <a href="http://dsibrew.org/wiki/Title_list">here.</a> Search for your game and find the titleid under the "TWL TitleID" category.</p>
 
-                        
                         
                         <li>Delete the <code class="highlighter-rouge">tmds</code> folder. </li>
 
@@ -229,6 +231,7 @@
                     <ol>
                     <li>Power on your DSi</li>
                         <li>Ensure your DSi has over 50% charge, if not, plug it in.</li>
+						<li> Make sure you have enough blocks available for your new app (See the beginning of Section I). If you do not, you WILL brick. </li>
 <li>Find the application named "Flipnote Studio" and open it.</li>
   <li>Choose "view flipnote", then choose "SD card" </li>
   <li>Choose "select folder", then choose "user" instead of "normal"</li>
