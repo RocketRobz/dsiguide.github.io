@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class=" js "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>DSiWare installation - DSi Guide</title>
+
+
+
+
+<meta name="description" content="DSi Homebrew Guide">
+
+
+
+
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="DSi Guide">
+<meta property="og:title" content="DSiWare installation">
+
+
+  <link rel="canonical" href="https://dsiguide.me/dsiware-installation/">
+  <meta property="og:url" content="https://dsiguide.me/dsiware-installation/">
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "LukeHasAWii",
+      "url" : "https://dsiguide.me",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://dsiguide.me/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<script type="text/javascript">
+    var host = "dsiguide.me";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+</script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://dsiguide.me/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dsiguide.me/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dsiguide.me/favicon-16x16.png">
+<link rel="manifest" href="https://dsiguide.me/manifest.json">
+<link rel="mask-icon" href="https://dsiguide.me/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+<!-- end custom head snippets -->
+
+  <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+  <body class="layout--single" style="margin-bottom: 178px;">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <ul class="visible-links">
+          
+          
+          
+          
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">Guide</a></li>
+	<li class="masthead__menu-item"><a href="/dsiware-installation">Install Backups</a></li>
+          <li class="masthead__menu-item"><a href="/faq">FAQ</a></li>
+          <li class="masthead__menu-item"><a href="/donations">Donations</a></li>
+		  <li class="masthead__menu-item"><a href="/homebrew-downloads">Homebrew Downloads</a></li>
+          <li class="masthead__menu-item"><a href="/credits">Credits</a></li>
+          <li class="masthead__menu-item"><a href="/troubleshooting">Troubleshooting</a></li>
+        </ul>
+        <ul class="hidden-links links-menu hidden">
+        <li class="masthead__menu-item"><a href="/site-navigation">Site Navigation</a></li>
+
+	      </ul>
+        <button class="nav-selector" id="toggle-nav"><div class="navicon"></div></button>
+      </nav>
+    </div>
+  </div>
+</div>
+
+          
+
+
+
+
+
+<!--script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6670011780914577",
+    enable_page_level_ads: true
+  });
+</script-->
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope="" itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="DSiWare Installation">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">DSiWare Installation
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+
+<hr>
+
+<div class="notice"><b>If you need help, ask the <a href="https://discord.gg/w4SKAr8">Nintendo DSiBrew Discord!</a></b></div>
+        
+          
+        <div class="notice"><b>I worked hard on this guide! If you want, you can <a href="https://dsiguide.me/donations">donate</a> through <a href="https://www.paypal.me/lukehasawii/10">PayPal</a></b></div>
+	                          <p class="notice--info">Please read ALL below information before starting.</p>
+
+
+                    <p class="notice--info">In order to install DSiWare backups, you must ALREADY have the app named "Flipnote Studio" installed on this device. You can check in Data Management to see if it is installed.</p>
+                    <p class="notice--warning">These instructions ONLY work on USA DSi systems! Make sure that there is a "U" by your version number in system settings.
+
+                    </p>
+                    <div class="notice--danger">There is a risk of bricking, as with any modifications done to any system, but the risk is low. However, before following these instructions, go on System Settings and check how many "blocks" you have left and ensure your DSiWare takes up less blocks than that (1 block = 128 kilobytes). If you install an app for which you do not have enough blocks, you WILL brick.</div>
+
+
+                    <h3 id="what-you-need">Requirements:</h3>
+
+                    <ul>
+                        <li><a href="https://github.com/dsiguide/dsiguide.github.io/raw/master/files/DSi%20Backup%20Template.zip">DSi Backup Installation Pack</a> </li>
+                        <li>Your DSiWare backup (see <a href="https://pastebin.com/sX51nBSk">here</a> for how to convert 3DS DSiWare backups from fre/eShop cia format to .app</li>
+                        <li>An SD card (4GB or greater reccomended) </li>
+                        <li>The latest release of <a href="https://www.python.org/downloads/">Python 3</a></li>
+                    </ul>
+
+                    <h3 id="instructions">Instructions</h3>
+                    <h4 id="section-i---copying-files">Section I - Copying Correct Files for TWLnf</h4>
+
+                    <ol>
+                        <li>Power on your DSi.</li>
+						<li>Take note of how many blocks you have free under "System Memory", and make sure that you have more blocks free than your newly installed app will take. Installing an app without enough blocks will result in a brick. </li>
+                        <li>If you do not have enough free blocks, you can free some space by copying over some apps you have installed to your SD card and then deleting them from System Memory. </li>
+						<li>Go to System Settings &gt; Data Management &gt; System Memory &gt; Flipnote Studio (any other DSiware in this area will work as well) &gt; Press Copy &gt; Press Yes, and finally exit to the DSi Menu. <em>(If you cannot access Data Management, try opening the DSi Shop, then close it, and try again!)</em></li>
+                        <li>Power off your device, and insert the device's SD card into your computer. </li>
+                        <li>Unzip <code class="highlighter-rouge">dsi_srl_extract.zip</code>. Open the drive of your SD card, then navigate to the folder titled <code class="highlighter-rouge">Private</code> &gt; <code class="highlighter-rouge">DS</code> &gt; <code class="highlighter-rouge">Title</code>. Copy your .bin file into the unzipped <code class="highlighter-rouge">dsi_srl_extract</code> folder. If you see more than one .bin file, just copy ONE.</li>
+                        <li>Double-click on <code class="highlighter-rouge">console_id.py</code> to run it (you need to have python downloaded if you do not already!). You will now see a console_id.txt file in the same folder. <em>If using Mac or Linux, use <a href="https://www.winehq.org/">'Wine'</a> so that the python will run properly.</em></li>
+                        <li>Copy <code class="highlighter-rouge">console_id.txt</code> to the root of your SD card.</li>
+                        
+                    
+                    </ol>
+                    <h4 id="section-ii---dsiware-to-sd">Section II - Copying the DSiWare title to SD</h4>
+                    <ol>
+						<li> Make sure you have enough blocks available for your new app (See the beginning of Section I). If you do not, you WILL brick! </li>
+                        <li>Unzip and open <code class="highlighter-rouge">DSi Backup Template</code> &gt; <class="highlighter-rouge">Game Folder Template</code> &gt; <code class="highlighter-rouge">Content</code> &gt; <code class="highlighter-rouge">tmds</code> and find the tmd file that has the titleid (see below) for the game you want to install. Copy the tmd file back into the <code class="highlighter-rouge">Content</code> folder.</li>
+                        
+                        	                          <p class="notice--info">To look up the titleid for your game, you can find most <a href="https://3dbrew.org/wiki/3DS_DSiWare_Titles">HERE,</a>but some others are located <a href="http://dsibrew.org/wiki/Title_list">here.</a> Search for your game and find the titleid under the "TWL TitleID" category.</p>
+
+                        
+                        <li>Delete the <code class="highlighter-rouge">tmds</code> folder. </li>
+
+                        <li>Copy the game you want to install to the <code class="highlighter-rouge">Content</code> folder. <em>NOTE: The backup NEEDS to be in .app format! You must obtain this file YOURSELF.</em></li>
+                        <li>Look at the tmd file (that you just copied over!) for your backup. If it ends in .0, rename your file "00000000.app" (there are eight zeros) For .256, name the backup "00000001.app" (there are seven zeros) and for .512, name the backup "00000002.app" (there are seven zeros.)</li>
+                        <li>Rename the tmd <code class="highlighter-rouge">title.tmd</code>.</li>
+                        <li>Go back to <code class="highlighter-rouge">DSi Backup Template</code> folder, and rename <code class="highlighter-rouge">Game Folder Template</code> to the name of your DSiWare.</li>
+                        <li>Copy ALL files and directories (srl extractor optional) inside the <code class="highlighter-rouge">DSi Backup Template</code> folder to the root of your SD card!</li>
+                        <li>Unplug your SD card, and then insert it into your DSi.</li>
+                    </ol>
+                    <h4 id="section-iii-installing">Section III - Installing Your DSiWare title</h4>
+                    <ol>
+                    <li>Power on your DSi</li>
+                        <li>Ensure your DSi has over 50% charge, if not, plug it in.</li>
+						<li> Make sure you have enough blocks available for your new app (See the beginning of Section I). If you do not, you WILL brick. </li>
+<li>Find the application named "Flipnote Studio" and open it.</li>
+  <li>Choose "view flipnote", then choose "SD card" </li>
+  <li>Choose "select folder", then choose "user" instead of "normal"</li>
+  <li>Open the ugopwn folder</li>
+  <li>Tap on the note with the red bottom half, then select "edit"</li>
+  <li>When you are on the editing page, tap on the flipnote frog icon in the bottom left (alternatively, press the up arrow for right handed users, or the X button for left handed users) </li>
+  <li>Tap on the film roll icon, then choose "copy"</li>
+  <li>Choose "back", then "exit" </li>
+  <li>Tap on the second note, then choose "edit" </li>
+  <li>Tap on the flipnote frog icon in the bottom left</li>
+  <li>Tap on the film roll icon</li>
+  <li>Tap on the single right arrow (the next to last arrow icon) two times. You should see that a new frame is created. </li>
+  <li>Tap on the paste button exactly 122 times </li>
+  <li>Tap the erase button, then the paste button</li>
+  <li>TWLnf will now boot up. If you see nothing happening or your DSi freezes, repeat section three, and make sure your SD card is formatted to fat32 and that the 'Flipnote calendar on boot' option in flipnote settings is disabled.</li>
+  <li>You will be prompted to create a NAND backup. Follow the on-screen instructions to make one.</li>
+  <li>Eventually, you will see a prompt to 'mount' your NAND backup. When you see this, press X.</li>
+  <li>You will see a warning about how unsafe mounting it directly can be, so either continue, or exit twlNF if you don't want to risk it to install a DSiWare backup.</li>
+  <li>Navigate to the folder with the name of your DSiWare title, then the content folder, and press 'A' on the title.tmd file.</li>
+  <li>Press 'A' again to install your DSiWare.</li>
+  <li>Wait until you see a message that says 'All Done.' If you do not see this message (eg. you see an error), you may have a corrupt game backup, or you may have followed the instructions incorrectly. Restart from section two. If the issue persists, contact the NDSiBrew Discord.</li>
+  <li>Press the 'select' button and then the 'A' button. When your DSi turns off, turn it back on. Your game will now appear on your homescreen!</li>
+                    </ol>
+                    <img src="https://github.com/dsiguide/dsiguide.github.io/raw/0a52f6ff82426c7db170fde97978ee98e5ea1379/files/dsiwarehomescreen.PNG" alt="DSiWare image">
+
+                    <p class="notice--primary">That is all! You have successfully installed a DSiWare backup to your DSi system.></p>
+                </section>
+
+                <footer class="page__meta">
+
+                </footer>
+
+            </div>
+
+        </article>
+
+    </div>
+ <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- end custom footer snippets -->
+
+        
+
+
+
+<div class="page__footer-copyright">© 2018 LukeHasAWii, <a href="https://www.dsiguide.me/credits#Developers">Developers</a>, Site Design Plailect - <a href="https://github.com/dsiguide/dsiguide.github.io">Source</a> - <a href="https://dsiguide.me/site-navigation">Site Navigation</a>
+
+      </div></footer>
+    </div>
+
+    <script src="./downgrading_files/main.min.js.download"></script>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+</body></html>

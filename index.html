@@ -18,7 +18,7 @@
 
 
 
-<meta name="description" content="A complete guide to all of DSi hacking, from stock to HiyaCFW!">
+<meta name="description" content="A complete guide to all of DSi hacking, from stock to HiyaCFW.">
 
 
 
@@ -33,7 +33,7 @@
 
 
 
-  <meta property="og:description" content="A complete guide to all of DSi hacking, from stock to HiyaCFW!">
+  <meta property="og:description" content="A complete guide to all of DSi hacking, from stock to HiyaCFW.">
 
 
 
@@ -125,15 +125,15 @@
           
           
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">Guide</a></li>
+		          <li class="masthead__menu-item"><a href="/dsiware-installation">Install DSiWare Backups</a></li>
           <li class="masthead__menu-item"><a href="/faq">FAQ</a></li>
           <li class="masthead__menu-item"><a href="/donations">Donations</a></li>
-          <li class="masthead__menu-item"><a href="/credits">Credits</a></li>
+		  <li class="masthead__menu-item"><a href="/homebrew-downloads">Homebrew Downloads</a></li>
           <li class="masthead__menu-item"><a href="/troubleshooting">Troubleshooting</a></li>
-          <li class="masthead__menu-item"><a href="/soon">Uninstall CFW</a></li>
           <li class="masthead__menu-item"><a href="/site-navigation">Site Navigation</a></li>
         </ul>
         <ul class="hidden-links links-menu hidden"></ul>
-        <!--see deleted language from source for the language stuff... you shouldn't be seeing this. stop messing w/ the source!/-->
+	                <li class="masthead__menu-item"><a href="/soon">Uninstall CFW</a></li>
         <button class="nav-selector" id="toggle-nav"><div class="navicon"></div></button>
       </nav>
     </div>
@@ -164,13 +164,21 @@
         
       </h1>
       
-        <p class="page__lead">A complete guide to DSi hacking, <br /> from stock to HiyaCFW!<br />
+        <p class="page__lead">A complete guide to DSi hacking, <br /> from stock to RocketLauncher + HiyaCFW (RL Coming Soon)<br />
 </p>
       
       
       
         <p><a href="https://dsiguide.me/get-started" class="btn btn--light-outline btn--large">Get Started</a></p>
       
+	     <p class="page__lead">A complete guide to installing DSiWare backups, wthout the need of DSi Shop.<br />
+</p>
+      
+      
+      
+        <p><a href="https://dsiguide.me/dsiware-installation" class="btn btn--light-outline btn--large">Install Backups</a></p>
+      
+    </div>
     </div>
   
   
@@ -201,15 +209,15 @@
       
       
 
+      <p class="notice--warning">NOTE: READ BELOW BEFORE STARTING. ROCKETLAUNCHER IS NOT RELEASED YET, BUT YOU CAN STILL HACK YOUR DSi, and gain homebrew support. <em>MAKE SURE NOT TO FOLLOW OTHER GUIDES THAT MIGHT MAKE YOU PAY FOR SOFTWARE-- EVERYTHING IS FREE!</em> </p>
+        
+<div class="notice"><b>If you need help, ask the <a href="https://discord.gg/w4SKAr8">Nintendo DSiBrew Discord!</a></b></div>
       
         
-        <div class ="notice"><b>If you need help, ask the <a href="https://discord.gg/MWxPgEp">Nintendo Homebrew Discord!</a>.</b></div>
+        <div class ="notice"><b>We worked hard on this guide! If you want, you can <a href="donations">donate</a> through <a href="https://www.paypal.me/lukehasawii/10">PayPal</a> or <a href="bitcoin:126mXsRyQ8qmuqYQ86X3fhTvXL5B3SH877">Bitcoin</a>!</b></div>
       
-        
-        <div class ="notice"><b>I worked hard on this guide! If you want, you can <a href="donations">donate</a> through <a href="https://www.paypal.me/lukehasawii/10">PayPal</a> or <a href="bitcoin:126mXsRyQ8qmuqYQ86X3fhTvXL5B3SH877">Bitcoin</a>!</b></div>
-      
-        <p class="notice--warning">NOTE: THIS SITE IS IN EARLY ACCESS. THE GUIDES ARE NOT PUBLISHED UNTIL THE HACKS ARE RELEASED! BOOKMARK THIS PAGE FOR UPDATES. </p>
-        <p class="notice--info">This guide works with the DSi as well as the DSi XL. This does not work with 3DS or DS Lite. </p>
+   
+        <p class="notice--info">This guide works with the DSi as well as the DSi XL. This does not work with the 3DS, DS Lite or DS Phat. </p>
 
 	  <!--hr>
 
@@ -230,13 +238,12 @@
       
       
 <div class="notice--danger">
-<p>This guide is for consoles purchaced after the DSi's official release... <em>only</em>!  <br />
-If you have a developer console, do NOT use this guide.</p>
+<p>This guide is for retail (consumer purchased) DSi and DSi XL consoles <em>only</em>!</p>
 </div>
-
+	    
 <p class="notice--warning">Read all of the introductory pages before proceeding.</p>
 
-<h2 id="what-is-homebrew">What is Homebrew?</h2>
+<h2 id="what-is-homebrew">What is homebrew?</h2>
 
 <p><a href="https://en.wikipedia.org/wiki/List_of_homebrew_video_games"><strong>Homebrew</strong></a> means software that is not made or authorized by Nintendo. This lets you play games made by homebrew developers, edit your saves, and much, much more.</p>
 
@@ -244,34 +251,33 @@ If you have a developer console, do NOT use this guide.</p>
 
 <h2 id="what-is-custom-firmware">What is Custom Firmware?</h2>
 
-<p><strong>Custom Firmware</strong> (“CFW”) enables you to use more advanced hacks that any normal DSiWare homebrew can't acheive, like installing DSiWare backups, custom DSiWare apps, and anything else that only ARM7 can do.</p>
+<p><strong>Custom Firmware</strong> (“CFW”) enables you to use more advanced hacks that any normal DSiWare homebrew can't acheive, like installing DSiWare backups, custom DSiWare apps, and anything else that only the ARM7 processor can do.</p>
 
-<p>CFW can be easily set up on any console that is on 1.4.5 or lower.</p>
+<p>CFW can be easily set up on any console.</p>
 
 <h2 id="what-does-this-guide-install">What does this guide install?</h2>
 
-<p>This guide installs a version of DSi Custom Firmware known as "HiyaCFW."</p>
+<p>This guide installs a modified whitelist called RocketLauncher and a version of DSi Custom Firmware known as "HiyaCFW." RocketLauncher is <em>NOT</em> released yet, but you can still do some homebrew without it.</p>
 
 
 <h2 id="what-can-i-do-with-custom-firmware">What can I do with Custom Firmware?</h2>
 
 <ul>
-  <li>Play all DSiWare games, without reigon locking!</li>
-  <li>Use “ROM hacks” for DSiWare games.</li>
+  <li>Play all DSiWare games, without region locking!</li>
+  <li>Use “ROM hacks” for DSiWare games</li>
   <li>Manage saves for many DSiWare games</li>
-  <li>Play games for older systems by using emulators.</li>
-  <li>Install homebrew titles to your system, and have them appear on your HOME Menu</li>
-  <li>Allows the installation of NTRBootHax (coming soon)</li>
-  <li>Run many old Nintendo DS flash carts that were blocked long ago or never worked on Nintendo DSi</li>
+  <li>Play games for older systems by using emulators (RocketLauncher not required)</li>
+  <li>Install homebrew titles to your system, and have them appear on your Nintendo DSi Menu</li>
+  <li>Run many old Nintendo DS flash carts that were blocked long ago or never worked on the DSi/DSi XL</li>
 </ul>
 
 <h2 id="what-do-i-need-to-know-before-starting">What do I need to know before starting?</h2>
 
 <ul>
   <li><strong>You should know that there is a chance your console could brick (not function at all) if you do something incorrectly. The chance of this is ALMOST 0% IF you follow instructions.</strong></li>
-  <li>This guide will work on DSi and DSiXL in all regions on firmware 1.4.5 or below. NOTE: THIS WILL NOT WORK ON ORIGINAL DS OR DS LITE!</li>
+  <li>This guide will work on DSi and DSi XL consoles in all regions except China and Korea on firmware 1.4.5 or below. NOTE: THIS WILL NOT WORK ON ORIGINAL DS PHAT OR DS LITE!</li>
   <li><strong>Keep your DSi plugged in AT ALL TIMES DURING THIS PROCESS to avoid sudden power loss!</strong></li>
-  <li>You may need an NTR DS cart for this process to work. To check if your DS Cart is NTR, look at the label.</li>
+  <li>You may need an NTR DS cart for this process. All DS carts are labelled NTR. DSi-enhanced or DSi-exclusive carts are labelled TWL.</li>
 </ul>
 
     </section>
@@ -303,7 +309,7 @@ If you have a developer console, do NOT use this guide.</p>
 
 
 
-<div class="page__footer-copyright">&copy; 2017 LukeHasAWii, Site Design Plailect - <a href="https://github.com/dsiguide/dsiguide.github.io">Source</a> - <a href="site-navigation">Site Navigation</a>
+<div class="page__footer-copyright">&copy; 2018 LukeHasAWii, <a href="https://www.dsiguide.me/credits#Developers">Developers</a>, Site Design Plailect - <a href="https://github.com/dsiguide/dsiguide.github.io">Source</a> - <a href="site-navigation">Site Navigation</a>
 
       </footer>
     </div>
